@@ -25,7 +25,9 @@ const App = () => {
 	}
 
 	const handleClick = () => {
-		navigator.clipboard.writeText(`http://localhost:5000/${fileUrl}`)
+		navigator.clipboard.writeText(
+			`https://image-uploader-sxrl.onrender.com/${fileUrl}`
+		)
 	}
 
 	const dragOverHandler = (ev: React.DragEvent<HTMLDivElement>) => {
@@ -73,12 +75,12 @@ const App = () => {
 					</p>
 					<img
 						className='object-cover w-auto rounded-xl my-6'
-						src={`http://localhost:5000/${fileUrl}`}
+						src={`https://image-uploader-sxrl.onrender.com/${fileUrl}`}
 						alt='uploaded'
 					/>
 					<div className='flex items-center w-full relative bg-[#F6F8FB] border py-[11px] pl-[7px] rounded-lg border-[#E0E0E0]'>
 						<p className='truncate font-poppins font-medium text-[8px] leading-[12px] text-[#4F4F4F] w-[78%]'>
-							http://localhost:5000/${fileUrl}
+							https://image-uploader-sxrl.onrender.com/${fileUrl}
 						</p>
 						<button
 							className='absolute inset-[2px] left-auto bg-accentBlue text-white font-poppins font-medium text-[8px] leading-[12px] rounded-lg py-[9px] px-[12px]'
