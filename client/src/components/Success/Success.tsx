@@ -18,7 +18,7 @@ export const Success = () => {
 	}
 
 	return (
-		<div className='relative flex flex-col justify-between items-center px-8 py-9 max-w-[25.125rem] max-h-[29.3125rem] rounded-xl shadow-main bg-white'>
+		<div className='relative flex flex-col justify-between items-center px-8 py-9 max-w-[25.125rem] rounded-xl shadow-main bg-white'>
 			<BackToButton />
 			<img src={checked} className='w-[35px] h-[35px]' alt='checked' />
 			<p className='font-poppins font-medium text-lg text-[#4F4F4F] mt-3'>
