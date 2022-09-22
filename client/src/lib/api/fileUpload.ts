@@ -12,7 +12,10 @@ export const uploadFileToServer = async (
 		body: formData,
 	}
 
-	return fetch('http://localhost:5000/upload', requestOptions)
+	return fetch(
+		'https://image-uploader-sxrl.onrender.com/upload',
+		requestOptions
+	)
 		.then(response => response.json())
 		.then(res => {
 			return res
@@ -30,7 +33,10 @@ export const uploadFilesToServer = async (file: File) => {
 		body: formData,
 	}
 
-	return fetch('http://localhost:5000/upload', requestOptions)
+	return fetch(
+		'https://image-uploader-sxrl.onrender.com/upload',
+		requestOptions
+	)
 		.then(response => response.json())
 		.then(res => {
 			return res
@@ -39,7 +45,7 @@ export const uploadFilesToServer = async (file: File) => {
 }
 
 export const fetchFile = async (fileName: string) => {
-	return fetch(`http://localhost:5000/${fileName}`, {
+	return fetch(`https://image-uploader-sxrl.onrender.com/${fileName}`, {
 		method: 'GET',
 	})
 		.then(response => response.json())

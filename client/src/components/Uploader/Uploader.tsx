@@ -73,9 +73,9 @@ export const Uploader = () => {
 			<a
 				rel='noreferrer'
 				target='_blank'
-				href={`http://localhost:5000/${fileUrl}`}
+				href={`https://image-uploader-sxrl.onrender.com/${fileUrl}`}
 			>
-				{fileUrl && `http://localhost:5000/${fileUrl}`}
+				{fileUrl && `https://image-uploader-sxrl.onrender.com/${fileUrl}`}
 			</a>
 		</div>
 	)

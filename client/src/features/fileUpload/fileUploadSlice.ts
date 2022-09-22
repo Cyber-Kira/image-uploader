@@ -30,7 +30,9 @@ export const uploadFiles = createAsyncThunk(
 export const fileUploadSlice = createSlice({
 	name: 'fileUpload',
 	initialState,
-	reducers: {},
+	reducers: {
+		reset: () => initialState,
+	},
 	extraReducers: builder =>
 		builder
 			.addCase(uploadFile.pending, state => {
@@ -46,3 +48,5 @@ export const fileUploadSlice = createSlice({
 				state.isLoading = false
 			}),
 })
+
+export const { reset } = fileUploadSlice.actions
