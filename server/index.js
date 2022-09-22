@@ -31,7 +31,7 @@ app.post("/upload", function (req, res) {
 
   sampleFile = req.files.sampleFile;
   encryptedFileName = `${makeid(10)}-${sampleFile.name}`;
-  console.log(sampleFile.mimetype === "image/png");
+  console.log(sampleFile);
   if (!["image/jpeg", "image/png"].includes(sampleFile.mimetype)) {
     res.send({
       status: false,
